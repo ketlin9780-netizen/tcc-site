@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Design - Vista sua criatividade</title>
+  <style>
+    :root {
+      --laranja: #FF6B35;
+      --azul: #004E89;
+      --roxo: #6A1B9A;
+      --rosa: #FF4081;
+      --cinza-claro: #f7f7f7;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--cinza-claro);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(45deg, var(--azul), var(--roxo));
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: var(--azul);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--roxo);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: var(--azul);
+      margin-bottom: 20px;
+    }
+
+    .produtos img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: var(--laranja);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: var(--roxo);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .valores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .valores div {
+      background: white;
+      padding: 15px;
+      border-left: 5px solid var(--rosa);
+      flex: 1 1 200px;
+    }
+
+    .logo-img {
+      max-width: 120px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .produtos {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo Star Design" class="logo-img">
+    <h1>Star Design</h1>
+    <p>Vista sua criatividade</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre Nós</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#como-funciona">Como Funciona</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Destaque da Marca</h2>
+    <p>Na Star Design, você transforma suas fotos e ideias em roupas personalizadas com estilo, conforto e originalidade. Criamos peças únicas com estampas em silk screen, feitas sob medida para você expressar sua criatividade.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A <strong>Star Design</strong> nasceu da paixão de quatro amigos pela moda e pela arte de criar. Nosso logo é formado por quatro estrelas em losango, representando cada um dos sócios e os valores que nos movem: criatividade, originalidade, imaginação, entusiasmo e energia.</p>
+    
+    <div class="valores">
+      <div><strong>Missão:</strong> Inovar o mercado da moda e permitir que as pessoas se vistam da sua criatividade, com qualidade e exclusividade.</div>
+      <div><strong>Visão:</strong> Ser referência no setor de moda personalizada, conquistando o mercado com inovação e excelência.</div>
+      <div><strong>Valores:</strong> Criatividade, liberdade de expressão, fidelidade, responsabilidade, excelência e transparência.</div>
+    </div>
+  </section>
+
+  <section id="produtos">
+    <h2>Produtos</h2>
+    <div class="produtos">
+      <img src="camiseta1.jpg" alt="Camiseta personalizada">
+      <img src="polo1.jpg" alt="Camisa polo personalizada">
+      <img src="slim1.jpg" alt="Camisa slim personalizada">
+      <!-- Substitua com suas imagens -->
+    </div>
+  </section>
+
+  <section id="como-funciona">
+    <h2>Como Funciona</h2>
+    <p>O processo é simples:</p>
+    <ol>
+      <li>Você escolhe o modelo e envia sua foto ou ideia criativa pelo formulário ou redes sociais.</li>
+      <li>Nossa equipe analisa, ajusta e envia a prévia da estampa.</li>
+      <li>Com a sua aprovação, produzimos a peça em algodão de alta qualidade e enviamos até você!</li>
+    </ol>
+  </section>
+
+  <section id="depoimentos">
+    <h2>Depoimentos</h2>
+    <p>Em breve adicionaremos os comentários e experiências dos nossos clientes!</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Endereço: Rua Gomes Cardim, nº 505, Brás – São Paulo, SP</p>
+    <p>Siga-nos nas redes sociais: 
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a> | 
+      <a href="#">WhatsApp</a>
+    </p>
+
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="4" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Star Design. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
