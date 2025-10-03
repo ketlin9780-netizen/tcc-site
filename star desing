@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Sua Criatividade - Roupas Personalizadas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(-45deg, #3B82F6, #8B5CF6, #EC4899, #F97316);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .star {
+            animation: twinkle 2s infinite;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .step-circle {
+            transition: all 0.3s ease;
+        }
+        
+        .step-circle:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Hero Section -->
+    <section class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Decorative Stars -->
+        <div class="absolute top-20 left-20 text-white text-2xl star">⭐</div>
+        <div class="absolute top-32 right-32 text-white text-xl star" style="animation-delay: 0.5s;">⭐</div>
+        <div class="absolute bottom-40 left-40 text-white text-lg star" style="animation-delay: 1s;">⭐</div>
+        <div class="absolute bottom-20 right-20 text-white text-2xl star" style="animation-delay: 1.5s;">⭐</div>
+        
+        <div class="text-center text-white px-6 max-w-4xl">
+            <h1 class="text-6xl md:text-7xl font-bold mb-6">Vista sua criatividade</h1>
+            <p class="text-xl md:text-2xl mb-8 leading-relaxed">
+                Transformamos suas fotos e ideias em roupas únicas e personalizadas. 
+                Camisetas, polos e camisas slim com a qualidade e exclusividade que você merece.
+            </p>
+            <button class="bg-white text-gray-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+                Conheça nossos produtos
+            </button>
+        </div>
+    </section>
+
+    <!-- Sobre Nós Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Sobre Nós</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Coluna 1 -->
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-blue-600">Nossa História</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Nascemos da paixão por transformar ideias em realidade. Com anos de experiência 
+                            no mercado têxtil, decidimos criar uma marca que valoriza a individualidade 
+                            e a criatividade de cada cliente.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-purple-600">Nossa Logo</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Representa as quatro estrelas da criatividade: originalidade, qualidade, 
+                            personalização e exclusividade. Cada estrela simboliza um pilar fundamental 
+                            do nosso compromisso com você.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Coluna 2 -->
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-8 rounded-lg text-white">
+                        <h3 class="text-2xl font-bold mb-4">Missão</h3>
+                        <p>Democratizar a moda personalizada, oferecendo produtos únicos que expressem a personalidade de cada cliente com qualidade excepcional.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-orange-500 to-orange-600 p-8 rounded-lg text-white">
+                        <h3 class="text-2xl font-bold mb-4">Visão</h3>
+                        <p>Ser referência nacional em roupas personalizadas, reconhecida pela inovação, qualidade e atendimento diferenciado.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-purple-500 to-purple-600 p-8 rounded-lg text-white">
+                        <h3 class="text-2xl font-bold mb-4">Valores</h3>
+                        <p>Criatividade, qualidade, sustentabilidade, respeito ao cliente e compromisso com a excelência em cada peça produzida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Nossos Produtos</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Camisetas -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 p-8 text-center">
+                        <div class="text-6xl text-white mb-4">👕</div>
+                        <h3 class="text-2xl font-bold text-white">Camisetas de Algodão</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                                Tecido 100% algodão
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                                Silk screen de alta qualidade
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                                Personalização completa
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Polos -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="bg-gradient-to-br from-pink-500 to-orange-500 p-8 text-center">
+                        <div class="text-6xl text-white mb-4">👔</div>
+                        <h3 class="text-2xl font-bold text-white">Camisas Polo</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-pink-500 rounded-full mr-3"></span>
+                                Tecido piquet premium
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-pink-500 rounded-full mr-3"></span>
+                                Corte clássico elegante
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-pink-500 rounded-full mr-3"></span>
+                                Bordados personalizados
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Camisas Slim -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="bg-gradient-to-br from-purple-500 to-blue-500 p-8 text-center">
+                        <div class="text-6xl text-white mb-4">👔</div>
+                        <h3 class="text-2xl font-bold text-white">Camisas Slim</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                                Corte slim moderno
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                                Tecidos nobres selecionados
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                                Detalhes personalizados
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Como Funciona</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Passo 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4 step-circle">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Envie sua Foto</h3>
+                    <p class="text-gray-600">Compartilhe sua ideia ou imagem que deseja estampar na sua peça personalizada.</p>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-pink-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4 step-circle">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Escolha o Produto</h3>
+                    <p class="text-gray-600">Selecione entre camisetas, polos ou camisas slim e defina tamanho e cor.</p>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4 step-circle">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Criamos sua Peça</h3>
+                    <p class="text-gray-600">Nossa equipe especializada produz sua roupa com máxima qualidade e atenção aos detalhes.</p>
+                </div>
+
+                <!-- Passo 4 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4 step-circle">
+                        4
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Receba em Casa</h3>
+                    <p class="text-gray-600">Sua peça única é entregue no conforto da sua casa com todo cuidado e carinho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Depoimentos</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-12 text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-pink-500 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        ⭐
+                    </div>
+                    <p class="text-xl text-gray-500 italic">
+                        Em breve, depoimentos dos nossos clientes!
+                    </p>
+                    <p class="text-gray-400 mt-4">
+                        Estamos ansiosos para compartilhar as experiências incríveis dos nossos primeiros clientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Contato</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Informações -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">Entre em Contato</h3>
+                    
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center text-white">
+                            📍
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Endereço</h4>
+                            <p class="text-gray-600">Rua da Criatividade, 123 - Centro, São Paulo - SP</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white">
+                            ✉️
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Email</h4>
+                            <p class="text-gray-600">contato@vistasuacriatividade.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white">
+                            📞
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Telefone</h4>
+                            <p class="text-gray-600">(11) 99999-9999</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <h4 class="font-semibold text-gray-800 mb-4">Redes Sociais</h4>
+                        <div class="flex space-x-4">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white cursor-pointer hover:bg-blue-600 transition-colors">
+                                🐦
+                            </div>
+                            <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center text-white cursor-pointer hover:bg-pink-600 transition-colors">
+                                📘
+                            </div>
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white cursor-pointer hover:bg-purple-600 transition-colors">
+                                📷
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">Envie sua Mensagem</h3>
+                    <form class="space-y-4" onsubmit="handleSubmit(event)">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Nome</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Seu nome completo">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="seu@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Telefone</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="(11) 99999-9999">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Mensagem</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Conte-nos sobre sua ideia..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <div class="flex justify-center space-x-2 mb-4">
+                    <span class="text-2xl">⭐</span>
+                    <span class="text-2xl">⭐</span>
+                    <span class="text-2xl">⭐</span>
+                    <span class="text-2xl">⭐</span>
+                </div>
+                <h3 class="text-2xl font-bold">Vista sua criatividade</h3>
+            </div>
+            <p class="text-gray-400">
+                © 2024 Vista Sua Criatividade. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Obrigado pela sua mensagem! Entraremos em contato em breve.');
+        }
+
+        // Smooth scroll for the hero button
+        document.querySelector('button').addEventListener('click', function() {
+            document.querySelector('section:nth-child(2)').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98808fe75099019f',t:'MTc1OTM2OTk2NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
